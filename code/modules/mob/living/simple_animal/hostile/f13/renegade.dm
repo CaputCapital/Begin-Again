@@ -47,7 +47,6 @@
 	icon_dead = "renegade_smasher-dead"
 	melee_damage_lower = 20
 	melee_damage_upper = 30
-	rapid_melee = 2
 
 // LIGHT RANGED VARIANT
 /mob/living/simple_animal/hostile/renegade/grunt
@@ -185,8 +184,8 @@
 	icon_living = "renegade_drifter"
 	icon_dead = "renegade_drifter-dead"
 	ranged = TRUE
-	maxHealth = 250
-	health = 250
+	maxHealth = 200
+	health = 200
 	healable = 1
 	speed = 1.3
 	vision_range = 12
@@ -248,7 +247,6 @@
 	armour_penetration = 5
 	extra_projectiles = 2
 	melee_queue_distance = 2
-	rapid_melee = 2
 	icon_state = "renegade_shotgunner"
 	icon_living = "renegade_shotgunner"
 	icon_dead = "renegade_shotgunner-dead"
@@ -289,8 +287,7 @@
 	armour_penetration = 0.5
 	check_friendly_fire = 0
 	environment_smash = ENVIRONMENT_SMASH_RWALLS
-	extra_projectiles = 7
-	rapid_melee = 2
+	extra_projectiles = 6
 	speed = 6
 	retreat_distance = 2
 	icon_state = "renegade_heavy"
@@ -342,7 +339,7 @@
 	aggro_vision_range = 7
 	armour_penetration = 0.5
 	environment_smash = ENVIRONMENT_SMASH_RWALLS
-	extra_projectiles = 7
+	extra_projectiles = 6
 	health = 750
 	maxHealth = 750
 	melee_damage_upper = 25
@@ -350,9 +347,8 @@
 	minimum_distance = 1
 	obj_damage = 500
 	speed = 3
-	rapid_melee = 2
 	retreat_distance = 0
-	vision_range = 15
+	vision_range = 7
 	icon = 'icons/fallout/mobs/humans/renegade.dmi'
 	icon_state = "renegade_boss"
 	icon_living = "renegade_boss"
