@@ -18,7 +18,7 @@
 	healable = 1
 	speed = 1.2
 	obj_damage = 150
-	melee_damage_lower = 10
+	melee_damage_lower = 15
 	melee_damage_upper = 20
 	attack_verb_simple = "smacks"
 	attack_sound = 'sound/weapons/smash.ogg'
@@ -150,8 +150,8 @@
 	icon_living = "renegade_defender"
 	icon_dead = "renegade_defender-dead"
 	ranged = TRUE
-	maxHealth = 750
-	health = 750
+	maxHealth = 500
+	health = 500
 	healable = 1
 	speed = 0.1
 	check_friendly_fire = 1
@@ -258,8 +258,8 @@
 	icon_state = "renegade_meister"
 	icon_living = "renegade_meister"
 	icon_dead = "renegade_meister-dead"
-	maxHealth = 500
-	health = 500
+	maxHealth = 750
+	health = 750
 	aggro_vision_range = 7
 	healable = 1
 	melee_damage_lower = 30
@@ -272,6 +272,7 @@
 	ranged_cooldown_time = 30
 	extra_projectiles = 4
 	speed = 4.5
+    move_to_delay = 5
 	projectiletype = /obj/item/projectile/bullet/a5mm/simple
 	projectilesound = 'sound/f13weapons/762lmg.ogg'
 	loot = list(/obj/item/stack/f13Cash/random/high, /obj/item/advanced_crafting_components/alloys, /obj/item/stack/sheet/plasteel/five)
@@ -285,14 +286,16 @@
 /mob/living/simple_animal/hostile/renegade/meister/heavy
 	name = "Renegade Heavy"
 	desc = "Is that a merc in layered advanced combat armor, high on drugs?! Holy shit, that's a big gun!"
-	maxHealth = 450
-	health = 450
+	maxHealth = 600
+	health = 600
 	aggro_vision_range = 7
 	armour_penetration = 0.5
 	check_friendly_fire = 0
 	environment_smash = ENVIRONMENT_SMASH_RWALLS
-	extra_projectiles = 6
+	extra_projectiles = 4
+    ranged_cooldown_time = 15
 	speed = 6
+    move_to_delay = 6
 	retreat_distance = 2
 	icon_state = "renegade_heavy"
 	icon_living = "renegade_heavy"
@@ -344,13 +347,15 @@
 	armour_penetration = 0.5
 	environment_smash = ENVIRONMENT_SMASH_RWALLS
 	extra_projectiles = 6
+	ranged_cooldown_time = 30
 	health = 750
 	maxHealth = 750
 	melee_damage_upper = 25
 	melee_damage_lower = 25
 	minimum_distance = 1
 	obj_damage = 500
-	speed = 4
+	speed = 6
+	move_to_delay = 9
 	retreat_distance = 0
 	vision_range = 7
 	icon = 'icons/fallout/mobs/humans/renegade.dmi'
