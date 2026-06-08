@@ -260,6 +260,7 @@
 	icon_dead = "renegade_meister-dead"
 	maxHealth = 500
 	health = 500
+	aggro_vision_range = 7
 	healable = 1
 	melee_damage_lower = 30
 	melee_damage_upper = 30
@@ -270,6 +271,7 @@
 	attack_sound = 'sound/weapons/slam.ogg'
 	ranged_cooldown_time = 30
 	extra_projectiles = 4
+	speed = 4.5
 	projectiletype = /obj/item/projectile/bullet/a5mm/simple
 	projectilesound = 'sound/f13weapons/762lmg.ogg'
 	loot = list(/obj/item/stack/f13Cash/random/high, /obj/item/advanced_crafting_components/alloys, /obj/item/stack/sheet/plasteel/five)
@@ -283,6 +285,8 @@
 /mob/living/simple_animal/hostile/renegade/meister/heavy
 	name = "Renegade Heavy"
 	desc = "Is that a merc in layered advanced combat armor, high on drugs?! Holy shit, that's a big gun!"
+	maxHealth = 450
+	health = 450
 	aggro_vision_range = 7
 	armour_penetration = 0.5
 	check_friendly_fire = 0
@@ -346,7 +350,7 @@
 	melee_damage_lower = 25
 	minimum_distance = 1
 	obj_damage = 500
-	speed = 3
+	speed = 4
 	retreat_distance = 0
 	vision_range = 7
 	icon = 'icons/fallout/mobs/humans/renegade.dmi'
