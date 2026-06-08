@@ -189,7 +189,6 @@
 	healable = 1
 	speed = 1.3
 	vision_range = 12
-	_vision_range = 15
 	check_friendly_fire = 1
 	retreat_distance = 10
 	minimum_distance = 6
